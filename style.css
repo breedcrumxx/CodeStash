@@ -1,102 +1,76 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 body {
-
-
-    position: relative;
+    width: 100%;
+    background-color: gray;
 }
 
-.container {
-    display: grid;
-    gap: 1.5rem;
+.nav {
     background-color: black;
-    padding: 10px;
-}
-
-.header {
-    position: relative;
-    padding: 0;
-    border: 2px solid red;
-    height: 50px;
-    width: 99%;
-    background-color: blue;
-    justify-content: space-between;
-    align-items: center;
-}
-
-li {
-    display: inline-block;
-    float: right;
-}
-
-.front {
-    text-align: center;
-    background-image: url("giphy.webp");
-    background-size: cover;
-    height: 260px;
-    width: 99%;
-}
-
-.front-content {
-    position: relative;
-    top: 30px;
-    text-align: center;
-    height:200px;
-    width: 99%;
-    justify-content: center;
-
-}
-
-.title {
     color: white;
+    font-size: 2vw;
+    display: flex;
 }
 
-.intro {
-    border: 2px solid red;
-    background-color: brown;
+.nav > p {
+    margin: .2vw .6vw;
+}
+
+.nav .home {
+    margin-right: 79%;
+    cursor: pointer;
+}
+
+.content {
+    width: 80%;
+    background-color: white;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content > table {
+    //background-color: blue;
+    overflow: show;
+
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    height: 200px;
-    width: 99%;
+    border-spacing: 2vw;
 }
 
-.book {
+.data {
     border: 2px solid red;
-    background-color: brown;
-    text-align: center;
-    height: 200px;
-    width: 99%;
-
-}
-
-.book .pane {
+    font-size: 2vw;
+    border-radius: 10px;
     position: relative;
-    top: 25px;
-    left: 110px;
-    border: 2px solid red;
-    width: 100px;
-    height: 100px;
-    background-color: black;
-}
 
-.mess{
-    position: relative;
-    border: 2px solid red;
-    background-color: brown;
-    text-align: center;
-    height: 200px;
-    width: 99%;
+    width: 15vw;
+    height: 15vw;
 }
 
 .footer {
-    position: relative;
-    border: 2px solid red;
-    background-color: brown;
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+
     text-align: center;
-    height: 100px;
-    width: 99%;
 }
 
+/*ANIMATION*/
+.one:hover, .two:hover, .three:hover, .four:hover {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    cursor: pointer;
+    font-size: 3vw;
+    padding: 10px;
+    margin: -10px;
+    border: 3px solid red;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}  
